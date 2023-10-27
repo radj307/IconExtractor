@@ -78,8 +78,6 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1.13.0
         with:
-          fail_on_unmatched_files: true
-          generate_release_notes: true
           tag: '${{ steps.get_tag.outputs.tag }}'
           artifacts: |
                      "*.nupkg"
