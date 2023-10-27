@@ -7,8 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "radj307.IconExtractor", "ra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub Actions", "GitHub Actions", "{0E595CD5-30F8-44DD-B179-35B45E11BF8F}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\GenerateRelease-csharp.yml = .github\workflows\GenerateRelease-csharp.yml
 		.github\workflows\UpdateVersion.yaml = .github\workflows\UpdateVersion.yaml
+		.github\workflows\CreateRelease.yaml = .github\workflows\CreateRelease.yaml
+		.github\workflows\UploadSDKToNuGet.yaml = .github\workflows\UploadSDKToNuGet.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{85DE1329-A3DB-4C75-A182-5C21777E368D}"
