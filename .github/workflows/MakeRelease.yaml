@@ -58,7 +58,7 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1.13.0
         with:
-          artifacts: nupkg
+          artifacts: "nupkg/*"
           generateReleaseNotes: true
           artifactErrorsFailBuild: true
           
