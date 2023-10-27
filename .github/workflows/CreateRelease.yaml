@@ -70,15 +70,15 @@ jobs:
       - run:  ls -lAghR
 
       - name: Get Latest Tag
-        id:   get-tag
+        id:   get_tag
         uses: WyriHaximus/github-action-get-previous-tag@v1
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: '${{ steps.get-tag.outputs.tag }}'
           fail_on_unmatched_files: true
           generate_release_notes: true
+          tag_name: '${{ steps.get_tag.outputs.tag }}'
           files: |
                  publish/radj307.IconExtractor.0.0.0.nupkg
                  publish/radj307.IconExtractor.0.0.0.snupkg
