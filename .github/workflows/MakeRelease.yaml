@@ -58,8 +58,7 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1.13.0
         with:
-          artifacts: |
-                     "./publish/*"
+          artifacts: nupkg
           
       - name:   Authenticate with Github NuGet Package Registry
         run:    dotnet nuget add source --username radj307 --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/radj307/index.json"
