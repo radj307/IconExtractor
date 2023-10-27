@@ -1,2 +1,2 @@
 # IconExtractor
-[.NET 6] Static methods for getting System.Media.ImageSource instances from files (.dll, .exe, .ico, .png, .jpg, etc.), directories, and HIcon handles.
+Static methods for getting System.Media.ImageSource instances from files (.dll, .exe, .ico, .png, .jpg, etc.), directories, and HIcon handles.
