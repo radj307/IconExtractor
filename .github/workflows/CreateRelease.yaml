@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref:          '${{ github.ref }}'
+          ref: '${{ github.ref }}'
 
       - uses: actions/setup-dotnet@main
         with:
@@ -58,6 +58,10 @@ jobs:
     runs-on:  ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: '${{ github.ref }}'
+
       - name: Download Artifact
         uses: actions/download-artifact@v3
         with:
