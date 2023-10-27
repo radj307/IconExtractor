@@ -46,7 +46,7 @@ jobs:
       - name:   Build Package
         run:    |
                 dotnet build -c Release
-                dotnet pack ./radj307.IconExtractor/radj307.IconExtractor.csproj --noLogo -c Release -o . --include-symbols
+                dotnet pack ./radj307.IconExtractor/radj307.IconExtractor.csproj --noLogo -c Release -o ./publish --include-symbols
 
       - name:   Upload Artifact
         uses:   actions/upload-artifact@v3
