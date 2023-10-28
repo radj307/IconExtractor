@@ -10,7 +10,6 @@ defaults:
             pwsh -noninteractive -command "try {{ $ErrorActionPreference='Stop'; . '{0}' }} catch {{ Write-Error ""FAILED: $_""; throw; }} if ((Test-Path -LiteralPath variable:\LASTEXITCODE)) {{ exit $LASTEXITCODE }}"
 
 jobs:
-  # This job is required because C# is assholes and dotnet publish refuses to use the version number set by the SetVersion.ps1 script.
   update-version-number:
     runs-on:  windows-latest
     
