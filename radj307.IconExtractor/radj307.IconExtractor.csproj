@@ -4,8 +4,8 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>0.0.0</Version>
-    <FileVersion>0.0.0</FileVersion>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0</FileVersion>
     <Authors>radj307</Authors>
     <Description>[.NET 6] Static methods for getting System.Media.ImageSource instances from files (.dll, .exe, .ico, .png, .jpg, etc.), directories, and HIcon handles.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
